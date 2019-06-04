@@ -93,7 +93,7 @@ export default {
   methods: {
     add(value) {
       axios
-        .post(`http://localhost:8000/tweets?id=${value}`)
+        .post(`https://c193b05a.ngrok.io/tweets?id=${value}`)
         .then(function(response) {
           console.log(response)
         })
