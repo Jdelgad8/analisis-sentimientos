@@ -194,7 +194,7 @@ export default {
     getData(v) {
       this.loading = v
       axios
-        .get(`https://a160f2df.ngrok.io/tweets?word=${this.word}`)
+        .get(`https://c193b05a.ngrok.io/tweets?word=${this.word}`)
         .then(response => {
           this.info = response.data;
           this.$store.commit("SET_INFO", response.data);
